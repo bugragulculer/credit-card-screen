@@ -73,7 +73,7 @@ const Step1 = () => {
             <input
               name="credit-number"
               type="tel"
-              maxlength="16"
+              maxLength="16"
               placeholder="Card Number"
               onChange={(e) =>
                 setCardInfo((values) => ({
@@ -87,7 +87,7 @@ const Step1 = () => {
             Name on Card
             <input
               name="credit-name"
-              class="cc-name"
+              className="cc-name"
               type="text"
               pattern="[A-Za-z]"
               placeholder="Name"
@@ -103,10 +103,10 @@ const Step1 = () => {
             Expire Month
             <input
               name="credit-expires"
-              class="cc-expires"
+              className="cc-expires"
               type="tel"
               pattern="\d*"
-              maxlength="2"
+              maxLength="2"
               placeholder="MM"
               max="12"
               onChange={(e) =>
@@ -121,10 +121,10 @@ const Step1 = () => {
             Expire Year{" "}
             <input
               name="credit-expires"
-              class="cc-expires"
+              className="cc-expires"
               type="tel"
               pattern="\d*"
-              maxlength="2"
+              maxLength="2"
               placeholder="YY"
               min="22"
               max="32"
@@ -137,15 +137,14 @@ const Step1 = () => {
             CCV
             <input
               name="credit-cvc"
-              class="cc-ccv"
+              className="cc-ccv"
               type="tel"
               pattern="\d*"
-              maxlength="3"
+              maxLength="3"
               placeholder="CCV"
               onChange={(e) =>
                 setCardInfo((values) => ({ ...values, ccv: e.target.value }))
               }
-              onKey
             />
           </span>
         </div>
@@ -246,10 +245,10 @@ const Step1 = () => {
 
       {back && (
         <div className="card--true">
-          <div class="card__black-line"></div>
-          <div class="card__back-content">
-            <div class="card__secret">
-              <p class="card__secret--last">{cardInfo.ccv}</p>
+          <div className="card__black-line"></div>
+          <div className="card__back-content">
+            <div className="card__secret">
+              <p className="card__secret--last">{cardInfo.ccv}</p>
             </div>
             <span className="bank-logo-back">
               <svg
