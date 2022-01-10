@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+.payment__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .input__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 900px;
+    justify-content: center;
+    .card__inputs {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 16px;
+      margin-bottom: 32px;
+      align-items: flex-start;
+      justify-content: center;
+      span {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: 16px;
+      }
+      input {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 8px 16px;
+        font-size: 16px;
+        width: 360px;
+        margin: 8px 0px;
+      }
+    }
+  }
+}
+
+.card--false {
+  font-family: "Share Tech Mono", monospace;
+  background-color: #9ba7b2;
+  display: block;
+  padding: 50px 100px;
+  width: 700px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  border: 1px solid grey;
+  margin: auto;
+  height: 430px;
+  background: linear-gradient(125deg, #2c4763, #11677c 55%);
+  position: relative;
+  margin-bottom: 32px;
+  .bank-logo svg {
+    position: absolute;
+    right: 100px;
+    padding-top: 15px;
+    max-width: 100px;
+    opacity: 0.9;
+    fill: #fff;
+  }
+  img.chip {
+    max-width: 80px;
+    position: absolute;
+    padding-top: 120px;
+  }
+
+  .mc {
+    position: absolute;
+    max-width: 140px;
+    padding-top: 300px;
+    right: 100px;
+    bottom: 70px;
+  }
+
+  .title {
+    font-family: Signika;
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+    opacity: 0.8;
+    padding-top: 20px;
+    position: absolute;
+    display: inline-block;
+  }
+}
+
+.emboss {
+  font-family: Share Tech Mono;
+  color: transparent;
+  text-shadow: -2px -2px 2px rgba(255, 255, 255, 1),
+    1px 1px 1px rgba(0, 0, 0, 0.9), 2px -2px 4px rgba(255, 255, 255, 1),
+    -2px -2px 2px rgba(0, 0, 0, 0.9), -2px 2px 1px rgba(0, 0, 0, 0.9);
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.4);
+}
+
+.number {
+  display: inline-block;
+  padding-top: 200px;
+  font-size: 48px;
+  position: relative;
+  z-index: 999;
+}
+
+.name {
+  font-size: 32px;
+  text-shadow: -2px -1px 1px rgba(255, 255, 255, 1),
+    1px 1px 1px rgba(0, 0, 0, 1), 1px 0px 1px rgba(255, 255, 255, 1),
+    -1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 1);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding-bottom: 20px;
+  left: 0;
+}
+
+.small-type {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: white;
+  padding-left: 36px;
+  line-height: 10px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.exp {
+  font-size: 32px;
+  padding-left: 36px;
+  text-shadow: -2px -1px 1px rgba(255, 255, 255, 1),
+    1px 1px 1px rgba(0, 0, 0, 1), 1px 0px 1px rgba(255, 255, 255, 1),
+    -1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 1);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+}
+
+.holo {
+  background: linear-gradient(
+    270deg,
+    #ec1414,
+    #eccb14,
+    #14ec1c,
+    #14eaec,
+    #1914ec,
+    #ec14da
+  );
+  background-size: 1200% 1200%;
+  -webkit-animation: Logo 4s ease infinite;
+  -moz-animation: Logo 4s ease infinite;
+  -o-animation: Logo 4s ease infinite;
+  animation: Logo 4s ease infinite;
+  display: block;
+  width: 130px;
+  height: 90px;
+  z-index: 19;
+  border-radius: 55px;
+  position: absolute;
+  top: 170px;
+  right: 100px;
+}
+@-webkit-keyframes Logo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Logo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes Logo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Logo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.holo-back {
+  position: absolute;
+  top: 140px;
+  left: 530px;
+  /* top: 300px; */
+  height: 90px;
+  width: 130px;
+  z-index: 22;
+  background-repeat: no-repeat;
+  background-image: url("http://jamesdelaney.ie/dev/hologram.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.card--true {
+  font-family: "Share Tech Mono", monospace;
+  background-color: #9ba7b2;
+  display: block;
+  padding: 50px 100px;
+  width: 700px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  border: 1px solid grey;
+  margin: auto;
+  height: 430px;
+  background: linear-gradient(125deg, #2c4763, #11677c 55%);
+  margin-bottom: 32px;
+  .card__black-line {
+    width: 900px;
+    height: 70px;
+    margin: 0 -100px;
+    background-color: #303030;
+  }
+  .card__back-content {
+    padding: 15px 15px 0;
+    position: relative;
+    height: calc(100% - 100px);
+  }
+  .card__secret--last {
+    color: #303030;
+    text-align: right;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .card__secret {
+    padding: 24px 24px;
+    background-color: #fff;
+    position: relative;
+  }
+  .bank-logo-back svg {
+    position: absolute;
+    bottom: 20px;
+    height: 150px;
+    width: 150px;
+    opacity: 0.9;
+    fill: #fff;
+  }
+}
+
+.card__button {
+  border: solid 1px orangered;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: orangered;
+  background-color: #fff;
+  margin-right: 16px;
+    transition: all ease-out 0.2s;
+    &:hover {
+    border-color: orange;
+    transition: all ease-out 0.2s;
+    color: orange;
+  }
+}
+.submit__button {
+  background-color: orangered;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #fff;
+  &:hover {
+    background-color: orange;
+    transition: all ease-out 0.2s;
+  }
+}
